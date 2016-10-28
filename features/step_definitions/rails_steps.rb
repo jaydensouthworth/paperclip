@@ -144,6 +144,7 @@ end
 
 Given /^I start the rails application$/ do
   cd(".") do
+    gem "capybara"
     require "./config/environment"
     require "capybara/rails"
   end
